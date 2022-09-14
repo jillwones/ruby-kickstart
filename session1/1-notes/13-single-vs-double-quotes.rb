@@ -10,3 +10,4 @@ puts 'This will\nonly be one line'
   # Two lines.
   # This will\nonly be one line
 
+  #this is string interpolation: "Hi, my name is#{my_name}" but for this you have to use double quotes, with single quotes it is just read as text exactly
