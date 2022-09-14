@@ -22,3 +22,5 @@
 # Question: If operators are just methods on objects, can other objects have operators?
 # Lets open up irb and try it out!
 
+#btw an irb is Interactive Ruby Shell, lets u try out ruby code quickly without having to make a new file,
+#like i typed irb in the cmd terminal below and did "cow" + "milk" and it resulted in => "cowmilk", as the +, -, *, / and % are just methods you can do it on a lotta objects, not just numbers
