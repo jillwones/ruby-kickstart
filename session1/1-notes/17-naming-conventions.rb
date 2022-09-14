@@ -19,11 +19,11 @@ Constant = nil
 # Remember when I said methods were their own little worlds? I lied.
 # Constants can be seen by anything defined in their scope.
 
-MyConstant  = 12
+MyConstant  = 12 #when the variable starts with a capital letter it is a constant variable and
 my_variable = 13
 def example
   begin
-    MyConstant        # => 12
+    MyConstant        # => 12, the constant variable shows up in the method but the regular variable aint visible in the method scope
     my_variable       # =>
   rescue => exception
     exception         # => #<NameError: undefined local variable or method `my_variable' for main:Object>
@@ -36,4 +36,3 @@ example # invokes the method
 # Question: classes begin with uppercase letters, are they constants?
 #   Remember, constants are just variables that aren't supposed to change.
 #   go test this in irb
-

@@ -9,9 +9,7 @@
 # arithmetic1(-6)     # => -50
 
 def arithmetic1(n)
-  puts (n * 5) - 20
+  (n * 5) - 20
 end
 
-arithmetic1(10)
-arithmetic1(10.5)
-arithmetic1(-6)
+#passes all tests after "rake 1:1" inputted in the terminal below
