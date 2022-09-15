@@ -13,6 +13,6 @@ odds = numbers.reject { |number| number.even? }
 odds    # => [1, 3, 5, 7, 9]
 
 
-# None of these modify the original array
+# None of these modify the original array, to modify the original array you would add an exclamation point to the method name, e.g numbers.reject!
 # They all return new arrays
 numbers # => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
