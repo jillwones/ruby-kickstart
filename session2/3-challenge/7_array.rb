@@ -15,9 +15,9 @@ def alternate_words(string)
     end
     array = string.split(' ')
     answer = []
-    array.each_with_index do |x, i|
-        if i.even?
-            answer << x
+    array.each_with_index do |word, index|
+        if index.even?
+            answer << word
         end
     end
     answer
