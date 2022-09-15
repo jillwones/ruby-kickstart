@@ -19,11 +19,18 @@
 # and when you think it is correct, you can test it with  $ rake 2:2
 
 def hi_hi_goodbye
-  # your code here
-
+  puts "Enter a number"
+  counter = gets
+  while counter.to_i >= 0 && counter !~ /bye/
+      counter.to_i.times {print "hi "}
+      puts
+      puts "Enter a number"
+      counter = gets
+  end
+  puts "goodbye"
 end
 
-
+#passes all the tests
 
 
 # This will just invoke the method if you run this program directly
