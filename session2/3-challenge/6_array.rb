@@ -15,3 +15,25 @@
 # prime_chars? ['a', 'bcd']       # => false
 # prime_chars? ['a', 'b', 'cd']   # => false
 
+
+require 'prime'
+def prime_chars?(array)
+    string = array.join
+    Prime.prime?(string.length)
+end
+
+#the commented out code above passes all tests, but lets try avoid using built in funcitons for this one, commented it back in to pass tests
+
+# def prime_chars? array
+#     string = array.join
+#     number = string.length
+#     is_prime = true
+#     for i in 2..number - 1
+#         if number % i == 0
+#             is_prime = false
+#         end
+#     end
+#     is_prime
+# end
+
+#the above code works but isnt passing the tests :(

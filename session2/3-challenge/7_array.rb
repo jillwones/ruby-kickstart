@@ -9,3 +9,18 @@
 # alternate_words("Can't we all get along?")      # => ["Can't", "all", "along"]
 # alternate_words("Elementary, my dear Watson!")  # => ["Elementary", "dear"]
 
+def alternate_words(string)
+    '!@$#%^&*()-=_+[]:;,./<>?\|'.split('').each do |char|   #the split('') splits it into an array of characters, if it was just split it would be a 1 element array
+        string = string.gsub(char, ' ')
+    end
+    array = string.split(' ')
+    answer = []
+    array.each_with_index do |x, i|
+        if i.even?
+            answer << x
+        end
+    end
+    answer
+end
+
+#passes the tests, basically splits the string of characters that we want to get rid of into an array of characters, we then loop through this array and on the string we subsitute any character that isnt allowed into a space, we then split the input string into an array, with each element being a seperate word, we then loop throguh this array (that now has no prohibitted chars in) and if the index of the element is even then we push it onto the answer array, once this has finished we return the answer array
