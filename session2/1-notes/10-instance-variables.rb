@@ -26,3 +26,6 @@ car.instance_variable_get '@miles'  # => 1000
 
 # Question: We create our car by calling Car.new
 # where is the new method defined?
+
+#so Car is an object and rememeber we are calling the method .new on Car itself on line 19 so its gonna go look it up in Car's class which is class so class defines the method .new so when we do Car.new it goes into class to find the method .new
+#the class method defines the method that all classes use
