@@ -20,6 +20,10 @@ car = Car.new
 car.set_miles 1000
 car.get_miles # => 1000
 
+bike = Car.new
+bike.set_miles 50
+p bike.get_miles
+
 car.instance_variables              # => [:@miles]
 car.instance_variable_get '@miles'  # => 1000
 
