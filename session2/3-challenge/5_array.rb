@@ -14,3 +14,15 @@
 #
 # mod_three [0,1,2,3,4,5,6,7] # => [1, 2, 1, 2, 1]
 
+def mod_three(array)
+    answer = []
+    array.each do |x|
+        remainder = x % 3
+        if remainder > 0
+            answer << remainder
+        end
+    end
+    answer
+end
+
+#passes all tests, did without hints, my answer very differnet from solved so ensure I fully understand solved approach too
