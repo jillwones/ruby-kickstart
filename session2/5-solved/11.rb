@@ -40,3 +40,7 @@ class BeerSong
     end.capitalize
   end
 end
+
+will = BeerSong.new 21
+
+will.print_song
