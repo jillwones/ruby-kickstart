@@ -16,5 +16,24 @@
 #
 
 class Person
+   def initialize(name, age)
+    @name = name
+    @age = age
+   end
 
+   attr_accessor 'name', 'age'
+
+   def birthday
+    @age +=1
+   end
 end
+
+will = Person.new 'Will', 22
+
+puts will.age
+puts will.name
+puts will.birthday
+puts will.age
+
+
+#passes all tests, happy with this one

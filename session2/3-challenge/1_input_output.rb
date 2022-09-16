@@ -16,4 +16,4 @@ end
 
 # puts "Type in 2 numbers..."
 # puts sum_difference_product
-#passes all tests, needed hints from solved
+#passes all tests, needed hints from
